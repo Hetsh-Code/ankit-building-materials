@@ -13,12 +13,12 @@
   <!-- Open Graph / Meta -->
   <meta property="og:title" content="Ankit Building Materials | All Type Hardware Trading">
   <meta property="og:description"
-    content="Bharosa patra ane vishvasniya jagya. Trusted building materials and hardware supplier along Radhanpur-Kandla Highway, Santalpur, Patan.">
+    content="A Trusted and Reliable Destination. Trusted building materials and hardware supplier along Radhanpur-Kandla Highway, Santalpur, Patan.">
   <meta property="og:image" content="assets/banner.png">
   <meta property="og:type" content="website">
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/logo/logo.ico">
@@ -37,7 +37,7 @@
       <div class="top-bar-left">
         <span class="highway-badge">
           <span class="pulse-dot"></span>
-          Express Highway Dispatch
+          <span data-i18n="topDispatch">Express Highway Dispatch</span>
         </span>
         <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
            target="_blank" rel="noopener noreferrer" class="top-info-item location-link" title="Open Ankit Building Materials on Google Maps">
@@ -45,7 +45,7 @@
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
             <circle cx="12" cy="10" r="3" />
           </svg>
-          <span class="top-location-text">Radhanpur-Kandla Hwy, Santalpur, Patan</span>
+          <span class="top-location-text" data-i18n="topLocation">Radhanpur-Kandla Hwy, Santalpur, Patan</span>
         </a>
       </div>
 
@@ -61,7 +61,7 @@
             <circle cx="12" cy="12" r="10" />
             <polyline points="12 6 12 12 16 14" />
           </svg>
-          <span>7 AM - 9 PM</span>
+          <span data-i18n="topHours">7 AM - 9 PM (Daily Open)</span>
         </span>
         <div class="lang-selector" aria-label="Language Selector">
           <button class="lang-btn active" data-lang="en" id="langBtnEn">ENG</button>
@@ -88,19 +88,19 @@
               <span class="logo-ankit">ANKIT</span>
               <span class="logo-sub">BUILDING MATERIALS</span>
             </div>
-            <span class="logo-tagline">Hardware Trading &bull; Santalpur</span>
+            <span class="logo-tagline" data-i18n="navTagline">Hardware Trading &bull; Santalpur</span>
           </div>
         </a>
 
         <!-- Desktop Navigation Links (Concise & Route-free) -->
         <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
-          <a href="#hero" class="nav-link active" id="navLinkHome" data-scroll="hero">Home</a>
-          <a href="#categories" class="nav-link" id="navLinkCategories" data-scroll="categories">Categories</a>
-          <a href="#estimator" class="nav-link" id="navLinkEstimator" data-scroll="estimator">Calculator</a>
-          <a href="#catalog" class="nav-link" id="navLinkCatalog" data-scroll="catalog">Products</a>
-          <a href="#logistics" class="nav-link" id="navLinkLogistics" data-scroll="logistics">Logistics</a>
-          <a href="#about" class="nav-link" id="navLinkAbout" data-scroll="about">About</a>
-          <a href="#contact" class="nav-link" id="navLinkContact" data-scroll="contact">Contact</a>
+          <a href="#hero" class="nav-link active" id="navLinkHome" data-scroll="hero" data-i18n="navHome">Home</a>
+          <a href="#categories" class="nav-link" id="navLinkCategories" data-scroll="categories" data-i18n="navCategories">Categories</a>
+          <a href="#estimator" class="nav-link" id="navLinkEstimator" data-scroll="estimator" data-i18n="navEstimator">Calculator</a>
+          <a href="#catalog" class="nav-link" id="navLinkCatalog" data-scroll="catalog" data-i18n="navCatalog">Products</a>
+          <a href="#logistics" class="nav-link" id="navLinkLogistics" data-scroll="logistics" data-i18n="navLogistics">Logistics</a>
+          <a href="#about" class="nav-link" id="navLinkAbout" data-scroll="about" data-i18n="navAbout">About</a>
+          <a href="#contact" class="nav-link" id="navLinkContact" data-scroll="contact" data-i18n="navContact">Contact</a>
         </nav>
 
         <!-- Header Actions -->
@@ -118,7 +118,7 @@
               <line x1="3" y1="6" x2="21" y2="6" />
               <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
-            <span class="cart-btn-text">Quote Cart</span>
+            <span class="cart-btn-text" data-i18n="navQuoteCart">Quote Cart</span>
             <span class="cart-badge" id="rfqCartCount" style="display:none;">0</span>
           </button>
 
@@ -140,28 +140,36 @@
           </button>
         </div>
 
-        <!-- Dedicated Corner Theme Slider (Corner Only: Light, System, Dark) -->
-        <div class="corner-theme-control" id="cornerThemeControl">
-          <div class="theme-slider-container" id="themeSliderContainer" role="radiogroup" aria-label="Appearance Theme Mode" data-current="dark">
-            <div class="theme-slider-pill"></div>
-            <button class="theme-toggle-btn" data-theme-val="light" aria-label="Light mode" title="Light Theme (☀️)">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"/>
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
-              </svg>
-            </button>
-            <button class="theme-toggle-btn" data-theme-val="system" aria-label="System mode" title="System Theme (💻)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                <line x1="8" y1="21" x2="16" y2="21"/>
-                <line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
-            </button>
-            <button class="theme-toggle-btn active" data-theme-val="dark" aria-label="Dark mode" title="Dark Theme (🌙)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
-            </button>
+        <!-- Dedicated Corner Controls: Language Selector + Theme Slider -->
+        <div class="corner-header-controls" id="cornerHeaderControls">
+          <div class="lang-selector header-lang-selector" aria-label="Language Selector">
+            <button class="lang-btn active" data-lang="en" id="headerLangBtnEn">ENG</button>
+            <button class="lang-btn" data-lang="gu" id="headerLangBtnGu">ગુજરાતી</button>
+            <button class="lang-btn" data-lang="hi" id="headerLangBtnHi">हिंदी</button>
+          </div>
+
+          <div class="corner-theme-control" id="cornerThemeControl">
+            <div class="theme-slider-container" id="themeSliderContainer" role="radiogroup" aria-label="Appearance Theme Mode" data-current="dark">
+              <div class="theme-slider-pill"></div>
+              <button class="theme-toggle-btn" data-theme-val="light" aria-label="Light mode" title="Light Theme (☀️)">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                </svg>
+              </button>
+              <button class="theme-toggle-btn" data-theme-val="system" aria-label="System mode" title="System Theme (💻)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </button>
+              <button class="theme-toggle-btn active" data-theme-val="dark" aria-label="Dark mode" title="Dark Theme (🌙)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -193,31 +201,31 @@
       <nav class="mobile-nav-links">
         <a href="#hero" class="mobile-nav-link active" data-scroll="hero">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-          <span>Home</span>
+          <span data-i18n="navHome">Home</span>
         </a>
         <a href="#categories" class="mobile-nav-link" data-scroll="categories">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-          <span>9 Categories</span>
+          <span data-i18n="navCategories">Categories</span>
         </a>
         <a href="#estimator" class="mobile-nav-link" data-scroll="estimator">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path></svg>
-          <span>Material Calculator</span>
+          <span data-i18n="navEstimator">Calculator</span>
         </a>
         <a href="#catalog" class="mobile-nav-link" data-scroll="catalog">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-          <span>Product Catalog</span>
+          <span data-i18n="navCatalog">Products</span>
         </a>
         <a href="#logistics" class="mobile-nav-link" data-scroll="logistics">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-          <span>Highway Dispatch</span>
+          <span data-i18n="navLogistics">Logistics</span>
         </a>
         <a href="#about" class="mobile-nav-link" data-scroll="about">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-          <span>About Us</span>
+          <span data-i18n="navAbout">About</span>
         </a>
         <a href="#contact" class="mobile-nav-link" data-scroll="contact">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          <span>Contact &amp; Map</span>
+          <span data-i18n="navContact">Contact</span>
         </a>
       </nav>
 
@@ -226,25 +234,25 @@
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
           </svg>
-          <span>Call: +91 97148 58660</span>
+          <span data-i18n="mobileCallBtn">Call: +91 97148 58660</span>
         </a>
 
         <a href="https://wa.me/919714858660?text=Hello%20Ankit%20Building%20Materials,%20I%20need%20a%20rate%20quote%20for%20construction%20materials." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp mobile-cta-btn">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.23-8.22 8.23z"/>
           </svg>
-          <span>WhatsApp Chat</span>
+          <span data-i18n="mobileWaBtn">WhatsApp Chat</span>
         </a>
 
         <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="mobile-location-link location-link">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Near Over Bridge, Santalpur, Patan</span>
+          <span data-i18n="mobileLocation">Near Over Bridge, Santalpur, Patan</span>
         </a>
       </div>
 
       <div class="mobile-nav-footer">
         <div class="mobile-lang-row">
-          <span class="mobile-lang-label">Language:</span>
+          <span class="mobile-lang-label" data-i18n="mobileLangLabel">Language:</span>
           <div class="lang-selector">
             <button class="lang-btn active" data-lang="en">ENG</button>
             <button class="lang-btn" data-lang="gu">ગુજરાતી</button>
@@ -268,21 +276,21 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
             </svg>
-            <span id="i18nHeroTag">Premier Building Materials &amp; Hardware Supplier</span>
+            <span id="i18nHeroTag" data-i18n="heroTag">Premier Building Materials &amp; Hardware Supplier</span>
           </div>
 
           <h1 class="hero-title" id="i18nHeroTitle">
-            Build Your Dreams With Us <br>
-            <span class="gradient-text">All Type Hardware Trading</span>
+            <span data-i18n="heroTitleMain">Build Your Dreams With Us</span> <br>
+            <span class="gradient-text" data-i18n="heroTitleGrad">All Type Hardware Trading</span>
           </h1>
 
           <!-- Gujarati Billboard Slogan Card -->
           <div class="hero-slogan-box">
-            <span class="hero-slogan-text" id="i18nHeroSlogan">"Bharosa patra ane vishvasniya jagya"</span>
-            <span class="hero-slogan-sub" id="i18nHeroSloganSub">The most reliable &amp; trusted hub for civil contractors, builders and homeowners</span>
+            <span class="hero-slogan-text" id="i18nHeroSlogan" data-i18n="heroSlogan">“A Trusted and Reliable Destination”</span>
+            <span class="hero-slogan-sub" id="i18nHeroSloganSub" data-i18n="heroSloganSub">The most reliable &amp; trusted hub for civil contractors, builders and homeowners</span>
           </div>
 
-          <p class="hero-desc" id="i18nHeroSub">
+          <p class="hero-desc" id="i18nHeroSub" data-i18n-html="heroDesc">
             Strategically located on <strong>Radhanpur - Kandla Highway near Over Bridge, Santalpur, Patan - 385350</strong>.
             We stock 9 core categories: high-grade cement, TMT rebar, PVC pipes, industrial PPE safety gear, heavy tarpaulins,
             waterproofing chemicals, abrasive wheels, hand tools, and precision fasteners at unbeatable wholesale rates.
@@ -296,26 +304,26 @@
                 <line x1="16" y1="14" x2="16" y2="18" />
                 <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01" />
               </svg>
-              <span>Calculate Materials</span>
+              <span data-i18n="heroBtnEstimator">Calculate Materials</span>
             </a>
             <a href="#catalog" class="btn btn-lg btn-secondary" id="heroBtnCatalog" data-scroll="catalog">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8" />
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
-              <span>Browse Catalog</span>
+              <span data-i18n="heroBtnCatalog">Browse Catalog</span>
             </a>
             <a href="tel:9714858660" class="btn btn-lg btn-call-hero" id="heroBtnCall">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <span>Call: 9714858660</span>
+              <span data-i18n="heroBtnCall">Call: 9714858660</span>
             </a>
             <a href="https://wa.me/919714858660?text=Hello%20Ankit%20Building%20Materials,%20I%20need%20a%20rate%20quote%20for%20construction%20materials." target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-whatsapp" id="heroBtnWa">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.71 4.3 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.49-.07 1.47-.72 1.68-1.41.21-.69.21-1.28.15-1.4-.06-.12-.22-.19-.47-.31z" />
               </svg>
-              <span>WhatsApp Us</span>
+              <span data-i18n="heroBtnWa">WhatsApp Us</span>
             </a>
           </div>
         </div>
@@ -330,11 +338,11 @@
                   <line x1="8" y1="21" x2="16" y2="21" />
                   <line x1="12" y1="17" x2="12" y2="21" />
                 </svg>
-                <span>Official Highway Billboard &bull; Radhanpur - Kandla National Highway</span>
+                <span data-i18n="bbHeaderTitle">Official Highway Billboard &bull; Radhanpur - Kandla National Highway</span>
               </div>
               <div class="live-badge">
                 <span class="live-beacon"></span>
-                Active Landmark on NH
+                <span data-i18n="bbLiveBadge">Active Landmark on NH</span>
               </div>
             </div>
 
@@ -349,7 +357,7 @@
                     <line x1="11" y1="8" x2="11" y2="14" />
                     <line x1="8" y1="11" x2="14" y2="11" />
                   </svg>
-                  Click to View Full Screen HD Billboard
+                  <span data-i18n="bbOverlayBadge">Click to View Full Screen HD Billboard</span>
                 </span>
               </div>
             </div>
@@ -359,7 +367,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
-                <a href="tel:9714858660">Call Hotline: <strong>+91 97148 58660</strong></a>
+                <a href="tel:9714858660"><span data-i18n="bbCallHotline">Call Hotline: </span><strong>+91 97148 58660</strong></a>
               </div>
               <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank" rel="noopener noreferrer" class="billboard-location-chip location-link" title="Open Google Maps Location">
@@ -367,7 +375,7 @@
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <span>Near Over Bridge, Santalpur, Patan - 385350</span>
+                <span data-i18n="bbLocationText">Near Over Bridge, Santalpur, Patan - 385350</span>
               </a>
               <div class="billboard-dispatch-badge">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -376,7 +384,7 @@
                   <circle cx="5.5" cy="18.5" r="2.5" />
                   <circle cx="18.5" cy="18.5" r="2.5" />
                 </svg>
-                <span>Highway Yard Bulk Loading</span>
+                <span data-i18n="bbDispatchText">Highway Yard Bulk Loading</span>
               </div>
             </div>
           </div>
@@ -389,7 +397,7 @@
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
               <polyline points="22 4 12 14.01 9 11.01" />
             </svg>
-            100% Genuine Branded Stock
+            <span data-i18n="trustPill1">100% Genuine Branded Stock</span>
           </span>
           <span class="trust-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -398,20 +406,20 @@
               <circle cx="5.5" cy="18.5" r="2.5" />
               <circle cx="18.5" cy="18.5" r="2.5" />
             </svg>
-            Fast Highway Site Delivery
+            <span data-i18n="trustPill2">Fast Highway Site Delivery</span>
           </span>
           <span class="trust-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 6v6l4 2" />
             </svg>
-            Ready Bulk Stock in Yard
+            <span data-i18n="trustPill3">Ready Bulk Stock in Yard</span>
           </span>
           <span class="trust-pill" style="border-color: rgba(16, 185, 129, 0.4); color: var(--safety-green);">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
-            "Your Safety Our Priority"
+            <span data-i18n="trustPill4">“Your Safety Our Priority”</span>
           </span>
         </div>
       </div>
@@ -423,11 +431,11 @@
     <section class="section section-darker" id="categories">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" id="i18nCatTag">9 Core Product Categories</div>
+          <div class="section-tag" id="i18nCatTag" data-i18n="catTag">9 Core Product Categories</div>
           <h2 class="section-title" id="i18nCatTitle">
-            Everything Under One Highway Roof <span>&amp; Ready Stock</span>
+            <span data-i18n="catTitle">Everything Under One Highway Roof</span> <span class="highlight-gold" data-i18n="catTitleSub">&amp; Ready Stock</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtitle" data-i18n="catSubtitle">
             Every category displayed on our Radhanpur-Kandla Highway billboard is fully stocked in wholesale volumes,
             ready for immediate loading and site delivery.
           </p>
@@ -445,11 +453,11 @@
     <section class="section" id="estimator">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Instant Estimator Tool</div>
+          <div class="section-tag" data-i18n="estTag">Instant Estimator Tool</div>
           <h2 class="section-title">
-            Construction Material <span>&amp; Quantity Calculator</span>
+            <span data-i18n="estTitle">Construction Material</span> <span data-i18n="estTitleSub">&amp; Quantity Calculator</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtitle" data-i18n="estSubtitle">
             Input your site dimensions to estimate cement bags, sand, kapchi aggregates, steel, bricks,
             or waterproofing requirements. Export your calculation straight to WhatsApp for immediate rates.
           </p>
@@ -459,16 +467,16 @@
           <!-- Calculator Tabs -->
           <div class="estimator-tabs" role="tablist">
             <button class="calc-tab active" data-calc="concrete" role="tab" id="calcTabConcrete">
-              <span>🏗️</span> Concrete Slab &amp; RCC
+              <span data-i18n="tabConcrete">🏗️ Concrete Slab &amp; RCC</span>
             </button>
             <button class="calc-tab" data-calc="brickwork" role="tab" id="calcTabBrick">
-              <span>🧱</span> Brickwork &amp; Mortar
+              <span data-i18n="tabBrick">🧱 Brickwork &amp; Mortar</span>
             </button>
             <button class="calc-tab" data-calc="waterproofing" role="tab" id="calcTabWater">
-              <span>💧</span> Terrace Waterproofing
+              <span data-i18n="tabWater">💧 Terrace Waterproofing</span>
             </button>
             <button class="calc-tab" data-calc="safety" role="tab" id="calcTabSafety">
-              <span>🦺</span> PPE &amp; Tarpaulin Site Pack
+              <span data-i18n="tabSafety">🦺 PPE &amp; Tarpaulin Site Pack</span>
             </button>
           </div>
 
@@ -479,30 +487,30 @@
               <div class="calc-form" id="calcFormConcrete">
                 <div class="form-group">
                   <label class="form-label" for="concArea">
-                    <span>Slab / Built-up Area</span>
-                    <span class="form-label-hint">Square Feet (sq ft)</span>
+                    <span data-i18n="lblConcArea">Slab / Built-up Area</span>
+                    <span class="form-label-hint" data-i18n="lblConcAreaHint">Square Feet (sq ft)</span>
                   </label>
                   <input type="number" id="concArea" class="form-input" value="1200" min="50" step="10">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="concThick">
-                    <span>Slab Thickness</span>
-                    <span class="form-label-hint">Inches</span>
+                    <span data-i18n="lblConcThick">Slab Thickness</span>
+                    <span class="form-label-hint" data-i18n="lblConcThickHint">Inches</span>
                   </label>
                   <select id="concThick" class="form-select">
-                    <option value="4.5">4.5 Inches (Standard Residential)</option>
-                    <option value="5" selected>5.0 Inches (Heavy Residential / Commercial)</option>
-                    <option value="6">6.0 Inches (Industrial Floor / Heavy Load)</option>
+                    <option value="4.5" data-i18n="optThick1">4.5 Inches (Standard Residential)</option>
+                    <option value="5" selected data-i18n="optThick2">5.0 Inches (Heavy Residential / Commercial)</option>
+                    <option value="6" data-i18n="optThick3">6.0 Inches (Industrial Floor / Heavy Load)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="concMix">
-                    <span>Concrete Grade / Mix Ratio</span>
-                    <span class="form-label-hint">Standard ISI</span>
+                    <span data-i18n="lblConcMix">Concrete Grade / Mix Ratio</span>
+                    <span class="form-label-hint" data-i18n="lblConcMixHint">Standard ISI</span>
                   </label>
                   <select id="concMix" class="form-select">
-                    <option value="m20" selected>M20 Grade (1 : 1.5 : 3 - Slabs, Beams &amp; Columns)</option>
-                    <option value="m25">M25 Grade (1 : 1 : 2 - Heavy Structural RCC)</option>
+                    <option value="m20" selected data-i18n="optMix1">M20 Grade (1 : 1.5 : 3 - Slabs, Beams &amp; Columns)</option>
+                    <option value="m25" data-i18n="optMix2">M25 Grade (1 : 1 : 2 - Heavy Structural RCC)</option>
                   </select>
                 </div>
               </div>
@@ -511,26 +519,26 @@
               <div class="calc-form" id="calcFormBrickwork" style="display: none;">
                 <div class="form-group">
                   <label class="form-label" for="brickLen">
-                    <span>Total Wall Length</span>
-                    <span class="form-label-hint">Feet</span>
+                    <span data-i18n="lblBrickLen">Total Wall Length</span>
+                    <span class="form-label-hint" data-i18n="lblBrickLenHint">Feet</span>
                   </label>
                   <input type="number" id="brickLen" class="form-input" value="60" min="5">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="brickHeight">
-                    <span>Wall Height</span>
+                    <span data-i18n="lblBrickHeight">Wall Height</span>
                     <span class="form-label-hint">Feet</span>
                   </label>
                   <input type="number" id="brickHeight" class="form-input" value="10" min="2">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="brickThick">
-                    <span>Wall Thickness</span>
-                    <span class="form-label-hint">Masonry Type</span>
+                    <span data-i18n="lblBrickThick">Wall Thickness</span>
+                    <span class="form-label-hint" data-i18n="lblBrickThickHint">Masonry Type</span>
                   </label>
                   <select id="brickThick" class="form-select">
-                    <option value="9" selected>9-inch Outer Wall (Standard Double Brick)</option>
-                    <option value="4.5">4.5-inch Partition Wall (Single Brick)</option>
+                    <option value="9" selected data-i18n="optBrickThick1">9-inch Outer Wall (Standard Double Brick)</option>
+                    <option value="4.5" data-i18n="optBrickThick2">4.5-inch Partition Wall (Single Brick)</option>
                   </select>
                 </div>
               </div>
@@ -539,19 +547,19 @@
               <div class="calc-form" id="calcFormWaterproofing" style="display: none;">
                 <div class="form-group">
                   <label class="form-label" for="wpArea">
-                    <span>Roof / Terrace / Surface Area</span>
-                    <span class="form-label-hint">Square Feet</span>
+                    <span data-i18n="lblWpArea">Roof / Terrace / Surface Area</span>
+                    <span class="form-label-hint" data-i18n="lblWpAreaHint">Square Feet</span>
                   </label>
                   <input type="number" id="wpArea" class="form-input" value="1500" min="100">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="wpType">
-                    <span>Application Treatment</span>
+                    <span data-i18n="lblWpType">Application Treatment</span>
                   </label>
                   <select id="wpType" class="form-select">
-                    <option value="terrace" selected>Terrace &amp; Parapet (Dr. Fixit Fastflex + Fiber Mesh)</option>
-                    <option value="basement">Basement Retaining Wall (Integral Waterproofing)</option>
-                    <option value="bathroom">Sunken Bathroom Slab Treatment</option>
+                    <option value="terrace" selected data-i18n="optWp1">Terrace &amp; Parapet (Dr. Fixit Fastflex + Fiber Mesh)</option>
+                    <option value="basement" data-i18n="optWp2">Basement Retaining Wall (Integral Waterproofing)</option>
+                    <option value="bathroom" data-i18n="optWp3">Sunken Bathroom Slab Treatment</option>
                   </select>
                 </div>
               </div>
@@ -560,15 +568,15 @@
               <div class="calc-form" id="calcFormSafety" style="display: none;">
                 <div class="form-group">
                   <label class="form-label" for="siteWorkers">
-                    <span>Active Site Labor &amp; Workforce Count</span>
-                    <span class="form-label-hint">Number of People</span>
+                    <span data-i18n="lblSiteWorkers">Active Site Labor &amp; Workforce Count</span>
+                    <span class="form-label-hint" data-i18n="lblSiteWorkersHint">Number of People</span>
                   </label>
                   <input type="number" id="siteWorkers" class="form-input" value="30" min="5">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="siteStorageArea">
-                    <span>Open Material Storage Area</span>
-                    <span class="form-label-hint">Sq Ft to Cover</span>
+                    <span data-i18n="lblSiteStorage">Open Material Storage Area</span>
+                    <span class="form-label-hint" data-i18n="lblSiteStorageHint">Sq Ft to Cover</span>
                   </label>
                   <input type="number" id="siteStorageArea" class="form-input" value="800" min="100">
                 </div>
@@ -579,7 +587,7 @@
             <div class="calc-result-box" id="calcResultBox">
               <div class="result-header">
                 <span class="result-title" id="calcResultTitle">Estimated Material Breakdown</span>
-                <span style="font-size: 0.75rem; color: var(--gold-400); font-weight: 700;">Live Real-Time</span>
+                <span style="font-size: 0.75rem; color: var(--gold-400); font-weight: 700;" data-i18n="calcLiveBadge">Live Real-Time</span>
               </div>
 
               <div class="result-grid" id="calcResultGrid">
@@ -592,7 +600,7 @@
                     <path
                       d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z" />
                   </svg>
-                  <span>Send Estimate to WhatsApp for Rates</span>
+                  <span data-i18n="btnCalcWa">Send Estimate to WhatsApp for Rates</span>
                 </button>
                 <button class="btn btn-secondary btn-sm" onclick="window.print()" id="calcPrintBtn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -600,7 +608,7 @@
                     <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
                     <rect x="6" y="14" width="12" height="8" />
                   </svg>
-                  <span>Print / Save Estimate Sheet</span>
+                  <span data-i18n="btnCalcPrint">Print / Save Estimate Sheet</span>
                 </button>
               </div>
             </div>
@@ -615,11 +623,11 @@
     <section class="section section-darker" id="catalog">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Wholesale &amp; Retail Catalog</div>
+          <div class="section-tag" data-i18n="catalogTag">Wholesale &amp; Retail Catalog</div>
           <h2 class="section-title">
-            Featured Construction <span>&amp; Hardware Inventory</span>
+            <span data-i18n="catalogTitle">Featured Construction</span> <span data-i18n="catalogTitleSub">&amp; Hardware Inventory</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtitle" data-i18n="catalogSubtitle">
             Browse genuine brands in stock at our Santalpur yard. Add required items to your Request for Quote (RFQ)
             to get rapid contractor rates.
           </p>
@@ -635,23 +643,22 @@
                   <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
               </span>
-              <input type="text" id="catalogSearchInput" class="search-input"
-                placeholder="Search by product name, brand, or specification (e.g. UltraTech, Astral, Tarpaulin, Rebar)...">
+              <input type="text" id="catalogSearchInput" class="search-input" data-i18n-placeholder="searchPlaceholder" placeholder="Search by product name, brand, or specification (e.g. UltraTech, Astral, Tarpaulin, Rebar)...">
             </div>
           </div>
 
           <!-- Category Filter Tabs -->
           <div class="catalog-filter-tabs">
-            <button class="filter-btn active" data-filter="all">All Products</button>
-            <button class="filter-btn" data-filter="cement">Cement &amp; Steel</button>
-            <button class="filter-btn" data-filter="pvc">PVC Pipes &amp; Valves</button>
-            <button class="filter-btn" data-filter="hardware">Hardware &amp; Wire</button>
-            <button class="filter-btn" data-filter="tools">Hand &amp; Power Tools</button>
-            <button class="filter-btn" data-filter="safety">Industrial Safety PPE</button>
-            <button class="filter-btn" data-filter="tarpaulin">Tarpaulins &amp; HDPE</button>
-            <button class="filter-btn" data-filter="waterproofing">Waterproofing</button>
-            <button class="filter-btn" data-filter="abrasives">Abrasive Discs</button>
-            <button class="filter-btn" data-filter="fasteners">Fasteners &amp; Screws</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All Products</button>
+            <button class="filter-btn" data-filter="cement" data-i18n="filterCement">Cement &amp; Steel</button>
+            <button class="filter-btn" data-filter="pvc" data-i18n="filterPvc">PVC Pipes &amp; Valves</button>
+            <button class="filter-btn" data-filter="hardware" data-i18n="filterHardware">Hardware &amp; Wire</button>
+            <button class="filter-btn" data-filter="tools" data-i18n="filterTools">Hand &amp; Power Tools</button>
+            <button class="filter-btn" data-filter="safety" data-i18n="filterSafety">Industrial Safety PPE</button>
+            <button class="filter-btn" data-filter="tarpaulin" data-i18n="filterTarpaulin">Tarpaulins &amp; HDPE</button>
+            <button class="filter-btn" data-filter="waterproofing" data-i18n="filterWaterproofing">Waterproofing</button>
+            <button class="filter-btn" data-filter="abrasives" data-i18n="filterAbrasives">Abrasive Discs</button>
+            <button class="filter-btn" data-filter="fasteners" data-i18n="filterFasteners">Fasteners &amp; Screws</button>
           </div>
         </div>
 
@@ -675,13 +682,13 @@
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 14 14" />
                 </svg>
-                <span>Strategic Highway Logistics Hub</span>
+                <span data-i18n="logisticsBadge">Strategic Highway Logistics Hub</span>
               </div>
-              <h2 class="logistics-title">
+              <h2 class="logistics-title" data-i18n-html="logisticsTitle">
                 Direct Highway Supply Line to <br>
                 <span class="gradient-text">Patan, Saurashtra &amp; Kandla Port</span>
               </h2>
-              <p class="logistics-desc">
+              <p class="logistics-desc" data-i18n-html="logisticsDesc">
                 Located right by the <strong>Santalpur Over Bridge on the Radhanpur - Kandla Highway</strong>,
                 our yard provides zero-delay vehicle access for heavy transport trucks, tractor trolleys, and pick-up
                 vans.
@@ -698,8 +705,8 @@
                     </svg>
                   </span>
                   <div class="corridor-text">
-                    <strong>Radhanpur - Santalpur - Varahi Corridor</strong>
-                    <span>Direct site unloading within 1 to 2 hours of booking</span>
+                    <strong data-i18n="corridor1Title">Radhanpur - Santalpur - Varahi Corridor</strong>
+                    <span data-i18n="corridor1Desc">Direct site unloading within 1 to 2 hours of booking</span>
                   </div>
                 </div>
 
@@ -710,8 +717,8 @@
                     </svg>
                   </span>
                   <div class="corridor-text">
-                    <strong>Adesar - Samakhiali - Gandhidham &amp; Kandla Port Route</strong>
-                    <span>Bulk supplies for port industrial setups, warehousing &amp; salt works</span>
+                    <strong data-i18n="corridor2Title">Adesar - Samakhiali - Gandhidham &amp; Kandla Port Route</strong>
+                    <span data-i18n="corridor2Desc">Bulk supplies for port industrial setups, warehousing &amp; salt works</span>
                   </div>
                 </div>
 
@@ -722,8 +729,8 @@
                     </svg>
                   </span>
                   <div class="corridor-text">
-                    <strong>Patan District, Sami, Harij &amp; Tharad Highway Grid</strong>
-                    <span>Regular daily dispatches to residential projects, schools &amp; agricultural borewells</span>
+                    <strong data-i18n="corridor3Title">Patan District, Sami, Harij &amp; Tharad Highway Grid</strong>
+                    <span data-i18n="corridor3Desc">Regular daily dispatches to residential projects, schools &amp; agricultural borewells</span>
                   </div>
                 </div>
               </div>
@@ -734,14 +741,14 @@
                     <path
                       d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  <span>Call Logistics Desk: 9714858660</span>
+                  <span data-i18n="btnLogisticsCall">Call Logistics Desk: 9714858660</span>
                 </a>
                 <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
                    target="_blank" rel="noopener noreferrer" class="btn btn-secondary location-btn" id="viewDirectionsBtn">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polygon points="3 11 22 2 13 21 11 13 3 11" />
                   </svg>
-                  <span>View Landmark Directions</span>
+                  <span data-i18n="btnLogisticsDir">View Landmark Directions</span>
                 </a>
               </div>
             </div>
@@ -749,18 +756,18 @@
             <!-- Right Location Info Card -->
             <div class="map-visual-box">
               <div class="map-header">
-                <span style="font-weight: 700; color: var(--gold-400);">Highway Location Card</span>
-                <span class="live-badge">Verified Hub</span>
+                <span style="font-weight: 700; color: var(--gold-400);" data-i18n="mapCardTitle">Highway Location Card</span>
+                <span class="live-badge" data-i18n="mapVerifiedHub">Verified Hub</span>
               </div>
 
               <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
                  target="_blank" rel="noopener noreferrer" class="map-address-card location-link" title="Click to open Google Maps Directions">
-                <div class="map-address-title">Ankit Building Materials 📍</div>
-                <div class="map-address-text">
+                <div class="map-address-title" data-i18n="mapAddressTitle">Ankit Building Materials 📍</div>
+                <div class="map-address-text" data-i18n-html="mapAddressText">
                   Radhanpur Kandla Highway near Over Bridge,<br>
                   Santalpur, Patan - 385350, Gujarat, India.
                 </div>
-                <span class="click-map-badge">Click to navigate on Google Maps &rarr;</span>
+                <span class="click-map-badge" data-i18n="mapClickBadge">Click to navigate on Google Maps &rarr;</span>
               </a>
 
               <div class="landmarks-list">
@@ -769,21 +776,21 @@
                     <polyline points="9 11 12 14 22 4" />
                     <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
                   </svg>
-                  <span>Adjacent to Santalpur National Highway Over Bridge</span>
+                  <span data-i18n="mapLandmark1">Adjacent to Santalpur National Highway Over Bridge</span>
                 </div>
                 <div class="landmark-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 11 12 14 22 4" />
                     <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
                   </svg>
-                  <span>Easy turnaround for 10-wheeler &amp; 14-wheeler trucks</span>
+                  <span data-i18n="mapLandmark2">Easy turnaround for 10-wheeler &amp; 14-wheeler trucks</span>
                 </div>
                 <div class="landmark-item">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 11 12 14 22 4" />
                     <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
                   </svg>
-                  <span>Weighbridge &amp; crane loading nearby</span>
+                  <span data-i18n="mapLandmark3">Weighbridge &amp; crane loading nearby</span>
                 </div>
               </div>
 
@@ -792,7 +799,7 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <polygon points="3 11 22 2 13 21 11 13 3 11" />
                 </svg>
-                <span>Open in Google Maps</span>
+                <span data-i18n="mapOpenBtn">Open in Google Maps</span>
               </a>
             </div>
           </div>
@@ -808,7 +815,7 @@
         <div style="text-align: center; margin-bottom: 2rem;">
           <span
             style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-400);">
-            Authorized Stockists &amp; Direct Factory Sourcing
+            <span data-i18n="brandsHeader">Authorized Stockists &amp; Direct Factory Sourcing</span>
           </span>
         </div>
         <div class="brands-row">
@@ -850,13 +857,12 @@
     <section class="section" id="about">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">The Ankit Advantage</div>
-          <h2 class="section-title">
-            Why Contractors <span>Trust Ankit Building Materials</span>
+          <div class="section-tag" data-i18n="aboutTag">The Ankit Advantage</div>
+          <h2 class="section-title" data-i18n-html="aboutTitle">
+            Why Contractors <span class="highlight-gold">Trust Ankit Building Materials</span>
           </h2>
-          <p class="section-subtitle">
-            "Bharosa patra ane vishvasniya jagya" is not just our motto — it's the daily standard we hold
-            in every dispatch, invoice, and contractor partnership across Gujarat.
+          <p class="section-subtitle" data-i18n="aboutSubtitle">
+            “A Trusted and Reliable Destination” is not just our motto — it's the daily standard we hold in every dispatch, invoice, and contractor partnership across Gujarat.
           </p>
         </div>
 
@@ -867,10 +873,9 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
-            <h3 class="trust-card-title">100% Genuine Certified Goods</h3>
-            <p class="trust-card-desc">
-              Direct factory sourcing with Manufacturer Test Certificates (MTC) for cement, TMT rebars, and pipes. Zero
-              counterfeit or sub-standard materials.
+            <h3 class="trust-card-title" data-i18n="feat1Title">100% Genuine Certified Goods</h3>
+            <p class="trust-card-desc" data-i18n="feat1Desc">
+              Direct factory sourcing with Manufacturer Test Certificates (MTC) for cement, TMT rebars, and pipes. Zero counterfeit or sub-standard materials.
             </p>
           </div>
 
@@ -881,10 +886,9 @@
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
             </div>
-            <h3 class="trust-card-title">Wholesale Volume Pricing</h3>
-            <p class="trust-card-desc">
-              We leverage large-scale purchasing power to pass transparent bulk discounts to road contractors, solar
-              EPCs, and builders.
+            <h3 class="trust-card-title" data-i18n="feat2Title">Wholesale Volume Pricing</h3>
+            <p class="trust-card-desc" data-i18n="feat2Desc">
+              We leverage large-scale purchasing power to pass transparent bulk discounts to road contractors, solar EPCs, and builders.
             </p>
           </div>
 
@@ -895,10 +899,9 @@
                 <polyline points="12 6 12 12 16 14" />
               </svg>
             </div>
-            <h3 class="trust-card-title">Express Highway Site Unloading</h3>
-            <p class="trust-card-desc">
-              Direct highway positioning ensures prompt logistics along Santalpur, Radhanpur, Patan, Varahi, and Kandla
-              corridor without transit jams.
+            <h3 class="trust-card-title" data-i18n="feat3Title">Express Highway Site Unloading</h3>
+            <p class="trust-card-desc" data-i18n="feat3Desc">
+              Direct highway positioning ensures prompt logistics along Santalpur, Radhanpur, Patan, Varahi, and Kandla corridor without transit jams.
             </p>
           </div>
 
@@ -909,10 +912,9 @@
                   d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
               </svg>
             </div>
-            <h3 class="trust-card-title">Complete 9-in-1 Inventory</h3>
-            <p class="trust-card-desc">
-              From the smallest drywall screw to full truckloads of cement and industrial PPE helmets, you never need
-              multiple suppliers.
+            <h3 class="trust-card-title" data-i18n="feat4Title">Complete 9-in-1 Inventory</h3>
+            <p class="trust-card-desc" data-i18n="feat4Desc">
+              From the smallest drywall screw to full truckloads of cement and industrial PPE helmets, you never need multiple suppliers.
             </p>
           </div>
         </div>
@@ -925,13 +927,12 @@
     <section class="section section-darker" id="testimonials">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Client Reviews</div>
-          <h2 class="section-title">
-            What Builders <span>Say About Us</span>
+          <div class="section-tag" data-i18n="testTag">Client Reviews</div>
+          <h2 class="section-title" data-i18n-html="testTitle">
+            What Builders <span class="highlight-gold">Say About Us</span>
           </h2>
-          <p class="section-subtitle">
-            Trusted by infrastructure contractors, solar power park developers, and local home builders across Patan and
-            Kutch.
+          <p class="section-subtitle" data-i18n="testSubtitle">
+            Trusted by infrastructure contractors, solar power park developers, and local home builders across Patan and Kutch.
           </p>
         </div>
 
@@ -939,17 +940,15 @@
           <div class="testimonial-card">
             <div>
               <div class="stars-row">★★★★★</div>
-              <p class="test-quote">
-                "We had a tight deadline on our NH highway project near Santalpur. Ankit Building Materials delivered
-                600 bags of UltraTech cement and TMT steel within 3 hours of our phone call. Their rates are genuine and
-                invoicing is seamless."
+              <p class="test-quote" data-i18n="test1Quote">
+                “We had a tight deadline on our NH highway project near Santalpur. Ankit Building Materials delivered 600 bags of UltraTech cement and TMT steel within 3 hours of our phone call. Their rates are genuine and invoicing is seamless.”
               </p>
             </div>
             <div class="test-author-box">
               <div class="author-avatar">RP</div>
               <div>
-                <div class="author-name">Ramesh Patel</div>
-                <div class="author-role">Highway Infrastructure Contractor, Patan</div>
+                <div class="author-name" data-i18n="test1Author">Ramesh Patel</div>
+                <div class="author-role" data-i18n="test1Role">Highway Infrastructure Contractor, Patan</div>
               </div>
             </div>
           </div>
@@ -957,17 +956,15 @@
           <div class="testimonial-card">
             <div>
               <div class="stars-row">★★★★★</div>
-              <p class="test-quote">
-                "For our solar project in the Charanka/Santalpur belt, we procured all industrial PPE safety gear, heavy
-                tarpaulins, and fasteners from Ankit Building Materials. ISI helmets and reflective jackets met all
-                corporate safety norms."
+              <p class="test-quote" data-i18n="test2Quote">
+                “For our solar project in the Charanka/Santalpur belt, we procured all industrial PPE safety gear, heavy tarpaulins, and fasteners from Ankit Building Materials. ISI helmets and reflective jackets met all corporate safety norms.”
               </p>
             </div>
             <div class="test-author-box">
               <div class="author-avatar">SK</div>
               <div>
-                <div class="author-name">Suresh Kumar</div>
-                <div class="author-role">Solar Site Project Manager</div>
+                <div class="author-name" data-i18n="test2Author">Suresh Kumar</div>
+                <div class="author-role" data-i18n="test2Role">Solar Site Project Manager</div>
               </div>
             </div>
           </div>
@@ -975,16 +972,15 @@
           <div class="testimonial-card">
             <div>
               <div class="stars-row">★★★★★</div>
-              <p class="test-quote">
-                "ભરોસાપાત્ર અને વિશ્વસનીય જગ્યા! મારા ઘરના બાંધકામ માટે સિમેન્ટ, એસ્ટ્રલ પાઇપ, ડૉ. ફિક્સિટ કેમિકલ અને
-                હાર્ડવેર બધું અહીંથી જ લીધું. ગુણવત્તા ઉત્તમ છે અને ડિલિવરી સમયસર મળી."
+              <p class="test-quote" data-i18n="test3Quote">
+                “A trusted and reliable destination! I procured all cement, Astral pipes, Dr. Fixit waterproofing and hardware for my home construction from Ankit Building Materials. Outstanding quality and punctual delivery.”
               </p>
             </div>
             <div class="test-author-box">
               <div class="author-avatar">JD</div>
               <div>
-                <div class="author-name">Jayeshbhai Desai</div>
-                <div class="author-role">Residential Homeowner, Santalpur</div>
+                <div class="author-name" data-i18n="test3Author">Jayeshbhai Desai</div>
+                <div class="author-role" data-i18n="test3Role">Residential Homeowner, Santalpur</div>
               </div>
             </div>
           </div>
@@ -998,11 +994,11 @@
     <section class="section" id="faq">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Frequently Asked Questions</div>
-          <h2 class="section-title">
-            Frequently Asked <span>Questions</span>
+          <div class="section-tag" data-i18n="faqTag">Frequently Asked Questions</div>
+          <h2 class="section-title" data-i18n-html="faqTitle">
+            Frequently Asked <span class="highlight-gold">Questions</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtitle" data-i18n="faqSubtitle">
             Common questions regarding site delivery, wholesale terms, billing, and order placement.
           </p>
         </div>
@@ -1010,60 +1006,51 @@
         <div class="faq-wrap">
           <div class="faq-item active">
             <div class="faq-question">
-              <span>What is the delivery radius along Radhanpur-Kandla Highway?</span>
+              <span data-i18n="faq1Q">What is the delivery radius along Radhanpur-Kandla Highway?</span>
               <span class="faq-toggle-icon">▼</span>
             </div>
-            <div class="faq-answer">
-              We provide express site delivery covering Santalpur, Radhanpur, Varahi, Adesar, Samakhiali, Patan city,
-              Harij, Sami, and extending towards Gandhidham and Tharad. Heavy orders (cement, steel, pipes) are
-              delivered via tractor trolleys or 10-wheeler trucks directly to your construction coordinates.
+            <div class="faq-answer" data-i18n="faq1A">
+              We provide express site delivery covering Santalpur, Radhanpur, Varahi, Adesar, Samakhiali, Patan city, Harij, Sami, and extending towards Gandhidham and Tharad. Heavy orders (cement, steel, pipes) are delivered via tractor trolleys or 10-wheeler trucks directly to your construction coordinates.
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <span>Do you provide GST invoices and Manufacturer Test Certificates (MTC)?</span>
+              <span data-i18n="faq2Q">Do you provide GST invoices and Manufacturer Test Certificates (MTC)?</span>
               <span class="faq-toggle-icon">▼</span>
             </div>
-            <div class="faq-answer">
-              Yes, 100%. We provide valid GST input tax invoices for all purchases, along with original mill test
-              certificates (MTC) for TMT rebar steel, cement batch certificates, and ISI test compliance reports for PPE
-              safety gear.
+            <div class="faq-answer" data-i18n="faq2A">
+              Yes, 100%. We provide valid GST input tax invoices for all purchases, along with original mill test certificates (MTC) for TMT rebar steel, cement batch certificates, and ISI test compliance reports for PPE safety gear.
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <span>Can I place bulk orders directly through WhatsApp or phone?</span>
+              <span data-i18n="faq3Q">Can I place bulk orders directly through WhatsApp or phone?</span>
               <span class="faq-toggle-icon">▼</span>
             </div>
-            <div class="faq-answer">
-              Absolutely! Simply call us at <strong>+91 97148 58660</strong> or use our website's Quote Cart to send
-              your list via WhatsApp. Our team responds with quotation breakdown, dispatch vehicle details, and payment
-              options within minutes.
+            <div class="faq-answer" data-i18n="faq3A">
+              Absolutely! Simply call us at +91 97148 58660 or use our website's Quote Cart to send your list via WhatsApp. Our team responds with quotation breakdown, dispatch vehicle details, and payment options within minutes.
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <span>What are the working hours of the Santalpur yard?</span>
+              <span data-i18n="faq4Q">What are the working hours of the Santalpur yard?</span>
               <span class="faq-toggle-icon">▼</span>
             </div>
-            <div class="faq-answer">
-              We are open 7 days a week from <strong>7:00 AM to 9:00 PM</strong> to support morning construction pours
-              and late-evening highway project emergencies.
+            <div class="faq-answer" data-i18n="faq4A">
+              We are open 7 days a week from 7:00 AM to 9:00 PM to support morning construction pours and late-evening highway project emergencies.
             </div>
           </div>
 
           <div class="faq-item">
             <div class="faq-question">
-              <span>Do you supply industrial safety items (PPE) compliant with audit standards?</span>
+              <span data-i18n="faq5Q">Do you supply industrial safety items (PPE) compliant with audit standards?</span>
               <span class="faq-toggle-icon">▼</span>
             </div>
-            <div class="faq-answer">
-              Yes. As shown on our highway billboard, "Your Safety Our Priority" is our core pillar. We stock ISI marked
-              industrial helmets, high-visibility EN471 Class 2 reflective jackets, steel-toe boots (200J impact rated),
-              fall arrest harnesses, and protective eye gear.
+            <div class="faq-answer" data-i18n="faq5A">
+              Yes. As shown on our highway billboard, "Your Safety Our Priority" is our core pillar. We stock ISI marked industrial helmets, high-visibility EN471 Class 2 reflective jackets, steel-toe boots (200J impact rated), fall arrest harnesses, and protective eye gear.
             </div>
           </div>
         </div>
@@ -1076,11 +1063,11 @@
     <section class="section section-darker" id="contact">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Direct Contact &amp; Inquiry</div>
-          <h2 class="section-title">
+          <div class="section-tag" data-i18n="contactTag">Direct Contact &amp; Inquiry</div>
+          <h2 class="section-title" data-i18n-html="contactTitle">
             Visit Our Yard <span>or Get Instant Quotation</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtitle" data-i18n="contactSubtitle">
             Connect with our sales and dispatch team directly for contractor pricing and delivery estimates.
           </p>
         </div>
@@ -1088,10 +1075,9 @@
         <div class="contact-grid">
           <!-- Contact Info -->
           <div class="contact-card">
-            <h3 class="contact-card-title">Ankit Building Materials</h3>
-            <p class="contact-card-desc">
-              Your dependable one-stop partner for all building materials and hardware trading.
-              Located strategically on the National Highway.
+            <h3 class="contact-card-title" data-i18n="contactCardTitle">Ankit Building Materials</h3>
+            <p class="contact-card-desc" data-i18n="contactCardDesc">
+              Your dependable one-stop partner for all building materials and hardware trading. Located strategically on the National Highway.
             </p>
 
             <div class="contact-methods">
@@ -1103,7 +1089,7 @@
                   </svg>
                 </div>
                 <div class="contact-method-info">
-                  <strong>Phone / Mobile (24/7 Hotline)</strong>
+                  <strong data-i18n="contactPhoneTitle">Phone / Mobile (24/7 Hotline)</strong>
                   <p><a href="tel:9714858660">+91 97148 58660</a></p>
                 </div>
               </div>
@@ -1117,9 +1103,9 @@
                   </svg>
                 </div>
                 <div class="contact-method-info">
-                  <strong>Yard &amp; Office Address</strong>
-                  <p>Radhanpur Kandla Highway near Over Bridge, Santalpur, Patan - 385350, Gujarat.</p>
-                  <span style="font-size: 0.78rem; color: var(--gold-400); font-weight: 700; margin-top: 0.25rem; display: inline-block;">📍 View on Google Maps &rarr;</span>
+                  <strong data-i18n="contactAddressTitle">Yard &amp; Office Address</strong>
+                  <p data-i18n="contactAddressText">Radhanpur Kandla Highway near Over Bridge, Santalpur, Patan - 385350, Gujarat.</p>
+                  <span style="font-size: 0.78rem; color: var(--gold-400); font-weight: 700; margin-top: 0.25rem; display: inline-block;" data-i18n="contactAddressLink">📍 View on Google Maps &rarr;</span>
                 </div>
               </a>
 
@@ -1131,8 +1117,8 @@
                   </svg>
                 </div>
                 <div class="contact-method-info">
-                  <strong>Operating Hours</strong>
-                  <p>Monday to Sunday: 7:00 AM - 9:00 PM (All 7 Days)</p>
+                  <strong data-i18n="contactHoursTitle">Operating Hours</strong>
+                  <p data-i18n="contactHoursText">Monday to Sunday: 7:00 AM - 9:00 PM (All 7 Days)</p>
                 </div>
               </div>
 
@@ -1145,9 +1131,8 @@
                   </svg>
                 </div>
                 <div class="contact-method-info">
-                  <strong>Instant WhatsApp Support</strong>
-                  <p><a href="https://wa.me/919714858660" target="_blank" rel="noopener noreferrer">Chat directly on
-                      WhatsApp (+91 97148 58660)</a></p>
+                  <strong data-i18n="contactWaTitle">Instant WhatsApp Support</strong>
+                  <p><a href="https://wa.me/919714858660" target="_blank" rel="noopener noreferrer"><span data-i18n="contactWaLink">Chat directly on WhatsApp (+91 97148 58660)</span></a></p>
                 </div>
               </div>
             </div>
@@ -1155,25 +1140,25 @@
 
           <!-- Quick Inquiry Form -->
           <div class="contact-card">
-            <h3 class="contact-card-title">Quick Site Inquiry</h3>
-            <p class="contact-card-desc">
+            <h3 class="contact-card-title" data-i18n="quickInqTitle">Quick Site Inquiry</h3>
+            <p class="contact-card-desc" data-i18n="quickInqDesc">
               Send your project requirement directly to our mobile desk for an immediate response.
             </p>
 
             <form class="inquiry-form" id="quickInquiryForm">
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="inqName">Your Name / Firm</label>
-                  <input type="text" id="inqName" class="form-input" placeholder="e.g. Ramesh Patel" required>
+                  <label class="form-label" for="inqName" data-i18n="lblInqName">Your Name / Firm</label>
+                  <input type="text" id="inqName" class="form-input" data-i18n-placeholder="inqNamePlaceholder" placeholder="e.g. Ramesh Patel" required>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="inqPhone">Mobile Number</label>
-                  <input type="tel" id="inqPhone" class="form-input" placeholder="e.g. 98765 43210" required>
+                  <label class="form-label" for="inqPhone" data-i18n="lblInqPhone">Mobile Number</label>
+                  <input type="tel" id="inqPhone" class="form-input" data-i18n-placeholder="inqPhonePlaceholder" placeholder="e.g. 98765 43210" required>
                 </div>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="inqType">Primary Category Needed</label>
+                <label class="form-label" for="inqType" data-i18n="lblInqType">Primary Category Needed</label>
                 <select id="inqType" class="form-select">
                   <option value="Cement & Building Materials">Cement &amp; Structural Materials</option>
                   <option value="PVC Pipes & Fittings">PVC / CPVC Pipes &amp; Plumbing Fittings</option>
@@ -1188,9 +1173,8 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="inqMsg">Requirement Details &amp; Site Location</label>
-                <textarea id="inqMsg" class="form-input" rows="3"
-                  placeholder="e.g. Need 400 bags UltraTech cement and 3 tons 12mm TMT steel delivered near Santalpur highway site tomorrow..."></textarea>
+                <label class="form-label" for="inqMsg" data-i18n="lblInqMsg">Requirement Details &amp; Site Location</label>
+                <textarea id="inqMsg" class="form-input" rows="3" data-i18n-placeholder="inqMsgPlaceholder" placeholder="e.g. Need 400 bags UltraTech cement and 3 tons 12mm TMT steel delivered near Santalpur highway site tomorrow..."></textarea>
               </div>
 
               <button type="submit" class="btn btn-whatsapp" id="inquirySubmitBtn">
@@ -1198,7 +1182,7 @@
                   <path
                     d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z" />
                 </svg>
-                <span>Submit Inquiry via WhatsApp</span>
+                <span data-i18n="btnSubmitInquiry">Submit Inquiry via WhatsApp</span>
               </button>
             </form>
           </div>
@@ -1226,9 +1210,8 @@
               </div>
             </div>
           </a>
-          <p class="footer-desc">
-            "Bharosa patra ane vishvasniya jagya." Your trusted hardware and building material partner on Radhanpur -
-            Kandla Highway, Santalpur, Patan - 385350.
+          <p class="footer-desc" data-i18n="footerDesc">
+            “A Trusted and Reliable Destination.” Your trusted hardware and building material partner on Radhanpur - Kandla Highway, Santalpur, Patan - 385350.
           </p>
           <div style="color: var(--gold-400); font-weight: 700; font-size: 0.95rem;">
             Mo: +91 97148 58660
@@ -1237,7 +1220,7 @@
 
         <!-- Col 2: Billboard Categories -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Product Categories</h4>
+          <h4 class="footer-col-title" data-i18n="footerColCat">Product Categories</h4>
           <ul class="footer-links">
             <li><a href="#catalog" class="footer-link" data-scroll="catalog">&bull; Cement &amp; Building Materials</a></li>
             <li><a href="#catalog" class="footer-link" data-scroll="catalog">&bull; PVC Pipes &amp; Fittings</a></li>
@@ -1253,7 +1236,7 @@
 
         <!-- Col 3: Quick Navigation -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Quick Links</h4>
+          <h4 class="footer-col-title" data-i18n="footerColLinks">Quick Links</h4>
           <ul class="footer-links">
             <li><a href="#hero" class="footer-link" data-scroll="hero">&bull; Home</a></li>
             <li><a href="#categories" class="footer-link" data-scroll="categories">&bull; 9 Core Categories</a></li>
@@ -1269,7 +1252,7 @@
 
         <!-- Col 4: Highway Address & Operating Info -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Yard Location</h4>
+          <h4 class="footer-col-title" data-i18n="footerColYard">Yard Location</h4>
           <a href="https://www.google.com/maps/place/Ankit+building+materials+ankit+hardware+%26tools/@23.7623567,71.1689968,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395affb5c0000001:0xa4904fe5030a7aba!8m2!3d23.7623518!4d71.1715717!16s%2Fg%2F11c764tf32?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D"
              target="_blank" rel="noopener noreferrer" class="location-link" style="display: block; margin-bottom: 1rem;" title="Open in Google Maps">
             <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
@@ -1282,18 +1265,18 @@
           </a>
           <div
             style="background: rgba(255,255,255,0.04); padding: 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-            <div style="font-size: 0.78rem; color: var(--gold-400); font-weight: 700;">HIGHWAY DISPATCH HOURS:</div>
-            <div style="font-size: 0.85rem; color: #fff; margin-top: 0.2rem;">Mon - Sun: 7:00 AM - 9:00 PM</div>
+            <div style="font-size: 0.78rem; color: var(--gold-400); font-weight: 700;" data-i18n="footerHoursTitle">HIGHWAY DISPATCH HOURS:</div>
+            <div style="font-size: 0.85rem; color: #fff; margin-top: 0.2rem;" data-i18n="footerHoursText">Mon - Sun: 7:00 AM - 9:00 PM</div>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>
-          &copy; 2026 Ankit Building Materials. All rights reserved.
+          <span data-i18n="footerRights">&copy; 2026 Ankit Building Materials. All rights reserved.</span>
         </div>
         <div class="highway-badge-footer">
-          "Build Your Dreams With Us..." &bull; "Your Safety Our Priority"
+          <span data-i18n="footerSlogan">“Build Your Dreams With Us...” &bull; “Your Safety Our Priority”</span>
         </div>
       </div>
     </div>
@@ -1355,7 +1338,7 @@
           <line x1="3" y1="6" x2="21" y2="6" />
           <path d="M16 10a4 4 0 0 1-8 0" />
         </svg>
-        <span>Quote Request List</span>
+        <span data-i18n="drawerTitle">Quote Request List</span>
         <span id="drawerItemCount" style="font-size: 0.85rem; color: var(--text-secondary); font-weight: normal;">(0
           items)</span>
       </div>
@@ -1371,12 +1354,12 @@
     <!-- Drawer Footer -->
     <div class="drawer-footer">
       <div class="form-group">
-        <label class="form-label" for="drawerContractorName">Your Name / Firm Name</label>
-        <input type="text" id="drawerContractorName" class="form-input" placeholder="e.g. Patel Construction">
+        <label class="form-label" for="drawerContractorName" data-i18n="drawerNameLabel">Your Name / Firm Name</label>
+        <input type="text" id="drawerContractorName" class="form-input" data-i18n-placeholder="drawerNamePlaceholder" placeholder="e.g. Patel Construction">
       </div>
 
       <div class="form-group">
-        <label class="form-label" for="drawerDeliveryLocation">Delivery Site Location</label>
+        <label class="form-label" for="drawerDeliveryLocation" data-i18n="drawerLocationLabel">Delivery Site Location</label>
         <select id="drawerDeliveryLocation" class="form-select">
           <option value="Santalpur Highway Site">Santalpur &bull; Highway Site / Town</option>
           <option value="Radhanpur Highway Corridor">Radhanpur &bull; Highway Corridor</option>
@@ -1392,7 +1375,7 @@
           <path
             d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z" />
         </svg>
-        <span>Send Quote to WhatsApp (+91 97148 58660)</span>
+        <span data-i18n="drawerCheckoutBtn">Send Quote to WhatsApp (+91 97148 58660)</span>
       </button>
     </div>
   </aside>
@@ -1424,7 +1407,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <!-- JavaScript -->
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=3.0"></script>
 </body>
 
 </html>
